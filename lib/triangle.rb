@@ -27,11 +27,7 @@ class Triangle
       else
         false
       end
-      if valid? == false
-          raise TriangleError
-          puts "The angles for this triangle are invalid."
-       end
-      end
+    end
 
         class
         TriangleError < StandardError
