@@ -22,7 +22,7 @@ class Triangle
       if side_one + side_two > side_three || side_two + side_three > side_one || side_one + side_three > side_two
       true
         elsif
-          side_one > 1 && side_two > 1 && side_three > 1
+          side_one >= 1 && side_two >= 1 && side_three >= 1
         true
           else
             false
