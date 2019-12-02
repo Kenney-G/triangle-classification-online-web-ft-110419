@@ -9,7 +9,7 @@ class Triangle
   
     def kind
      if side_one == side_two && side_three
-      kind = :equilateral
+      :equilateral
       elsif side_one != side_two || side_three 
       kind = :scalene
       elsif side_one || side_two || side_three <=>
