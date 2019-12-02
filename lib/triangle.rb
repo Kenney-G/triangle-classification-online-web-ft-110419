@@ -32,7 +32,7 @@ class Triangle
           puts "The angles for this triangle are invalid."
        end
       end
-    end
+
         class
         TriangleError < StandardError
         end
