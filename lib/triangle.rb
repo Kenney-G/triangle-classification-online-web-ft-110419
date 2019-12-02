@@ -23,9 +23,7 @@ class Triangle
         if side_one + side_two > side_three || side_two + side_three > side_one || side_one + side_three > side_two
         true
           elsif
-          side_one >= 1 && side_two >= 1 && side_three >= 1
-          true
-          else
+          side_one <= 1 || side_two <= 0 || side_three <= 0
             raise TriangleError
             puts "The angles for this triangle are invalid."
         end
