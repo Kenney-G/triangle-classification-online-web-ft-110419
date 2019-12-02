@@ -20,6 +20,5 @@ class Triangle
     end
     
     class TriangleError < StandardError
-      def valid?
-        Triangle.
+    end
 end
