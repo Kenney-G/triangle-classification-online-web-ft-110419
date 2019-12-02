@@ -25,9 +25,6 @@ class Triangle
         elsif
           side_one >= 1 && side_two >= 1 && side_three >= 1
         true
-          elsif
-          side_one > 0 && side_two > 0 && side_three > 0
-          true
         else
           raise TriangleError
           puts "The angles for this triangle are invalid."
