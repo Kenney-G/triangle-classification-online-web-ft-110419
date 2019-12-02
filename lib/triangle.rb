@@ -28,11 +28,10 @@ class Triangle
       end
     end
       
-      def valid_triangle
           if valid? == false
           raise TriangleError
           puts "The angles for this triangle are invalid."
-       end
+          end
     
     
     
