@@ -20,7 +20,7 @@ class Triangle
     end
     
     def valid?
-     check_one = [(side_one + side_two > side_three), (side_one + side_three > side_two), (side_two +side_three > side_one)]
+     check_one = [(side_one + side_two > side_three), (side_one + side_three > side_two), (side_two + side_three > side_one)]
     [side_one, side_two, side_three].each do |side|
       check_one << false if side <= 0
     raise TriangleError if check_one.include?(false)
