@@ -28,12 +28,11 @@ class Triangle
           side_one > 0 && side_two > 0 && side_three > 0
           true
         else
-            false
-      end
-          if valid? == false
           raise TriangleError
           puts "The angles for this triangle are invalid."
           end
+      end
+
     end
       
 
