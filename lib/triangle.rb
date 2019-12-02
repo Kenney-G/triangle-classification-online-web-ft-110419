@@ -8,9 +8,8 @@ class Triangle
   end
   
     def kind
-      :equilateral
-      :isosceles
-      :scalene
+     if side_one == side_two == side_three
+      kind = :equilateral || :isosceles || :scalene
     end
     
 end
