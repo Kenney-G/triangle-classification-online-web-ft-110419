@@ -20,12 +20,10 @@ class Triangle
     end
     
     def valid?
-        if side_one + side_two > side_three || side_two + side_three > side_one || side_one + side_three > side_two
-        true
-        else
-          false
-            raise TriangleError
-            puts "The angles for this triangle are invalid."
+     check_one = [(side_one + side_two > side_three), (side_one + side_three > side_two), (side_two +side_three > side_one)]
+    [side_one, side_two, side_three].each do |side|
+      check_one << false if side <= 0
+    raise TriangleError if check_one.include?(false)
         end
       end
         class
