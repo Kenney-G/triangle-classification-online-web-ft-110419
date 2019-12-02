@@ -18,4 +18,8 @@ class Triangle
           :isosceles
       end
     end
+    
+    class TriangleError < StandardError
+      def valid?
+        Triangle.
 end
