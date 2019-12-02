@@ -8,6 +8,7 @@ class Triangle
   end
   
     def kind
+      valid?
       if side_one == side_two && side_two == side_three
       :equilateral
         elsif
