@@ -24,7 +24,10 @@ class Triangle
         elsif
           side_one >= 1 && side_two >= 1 && side_three >= 1
         true
-          else
+          elsif
+          side_one + side_two + side_three != 0
+          true
+        else
             false
       end
           if valid? == false
