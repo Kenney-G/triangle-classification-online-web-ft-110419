@@ -23,8 +23,9 @@ class Triangle
       true
         elsif
           side_one > 1 && side_two > 1 && side_three > 1
+        true
           else
-          false
+            false
       end
     end
       
